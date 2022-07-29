@@ -19,8 +19,13 @@ namespace Tracker.Models
 
     public void CheckType()
     {
-      if (this.Side1 + this.Side2 <= this.Side3 || this.Side1 + this.Side3 <= this.Side2 || this.Side2 + this.Side3 <= this.Side1) {
+      if (this.Side1 + this.Side2 <= this.Side3 || this.Side1 + this.Side3 <= this.Side2 || this.Side2 + this.Side3 <= this.Side1) 
+      {
         this.Type = "Not a triangle";
+      }
+      else if (this.Side1 == this.Side2 && this.Side1 == this.Side3 && this.Side2 == this.Side3)
+      {
+        this.Type = "Equilateral Triangle";
       }
     }
   }
