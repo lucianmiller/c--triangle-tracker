@@ -71,5 +71,20 @@ namespace Tracker.Tests
       //Assert
       Assert.AreEqual(answer, result);
     }
+
+    [TestMethod]
+    public void CheckType_DeterminesScaleneTriangle_Triangle()
+    {
+      //Arrange
+      Triangle newTriangle = new Triangle(7, 12, 15);
+      newTriangle.CheckType();
+
+      //Act
+      string answer = "Scalene Triangle";
+      string result = newTriangle.Type;
+
+      //Assert
+      Assert.AreEqual(answer, result);
+    }
   }
 }
