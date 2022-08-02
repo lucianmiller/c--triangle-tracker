@@ -56,5 +56,20 @@ namespace Tracker.Tests
       //Assert
       Assert.AreEqual(answer, result);
     }
+
+    [TestMethod]
+    public void CheckType_DeterminesIsoscelesTriangle_Triangle()
+    {
+      //Arrange
+      Triangle newTriangle = new Triangle(4, 4, 7);
+      newTriangle.CheckType();
+
+      //Act
+      string answer = "Isosceles Triangle";
+      string result = newTriangle.Type;
+
+      //Assert
+      Assert.AreEqual(answer, result);
+    }
   }
 }
