@@ -27,6 +27,10 @@ namespace Tracker.Models
       {
         this.Type = "Equilateral Triangle";
       }
+      else if (this.Side1 == this.Side2 || this.Side1 == this.Side3 || this.Side2 == this.Side3)
+      {
+        this.Type = "Isosceles Triangle";
+      }
     }
   }
 }
