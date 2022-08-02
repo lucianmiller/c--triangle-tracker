@@ -31,6 +31,10 @@ namespace Tracker.Models
       {
         this.Type = "Isosceles Triangle";
       }
+      else
+      {
+        this.Type = "Scalene Triangle";
+      }
     }
   }
 }
